@@ -1,24 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import PictureRow from "./components/PictureRow";
 
 function App() {
+  const photos = [
+    {
+      src: "https://homepages.cae.wisc.edu/~ece533/images/fruits.png",
+      alt: "fruits1",
+    },
+    {
+      src: "https://homepages.cae.wisc.edu/~ece533/images/fruits.png",
+      alt: "fruits2",
+    },
+    {
+      src: "https://homepages.cae.wisc.edu/~ece533/images/fruits.png",
+      alt: "fruits3",
+    },
+    {
+      src: "https://homepages.cae.wisc.edu/~ece533/images/fruits.png",
+      alt: "fruits4",
+    },
+    {
+      src: "https://homepages.cae.wisc.edu/~ece533/images/fruits.png",
+      alt: "fruits5",
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className="header-text">Photo Gallary App</h1>
+      <div>
+        <PictureRow photos={photos} />
+        <PictureRow photos={photos} />
+        <PictureRow photos={photos} />
+        <PictureRow photos={photos} />
+        <PictureRow photos={photos} />
+      </div>
     </div>
   );
 }

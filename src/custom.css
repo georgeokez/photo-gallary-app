@@ -1,0 +1,14 @@
+.header-text {
+  color: goldenrod;
+}
+
+.photo-container {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.photo-container-1 {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
